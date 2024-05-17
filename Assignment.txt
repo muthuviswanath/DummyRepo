@@ -1,0 +1,22 @@
+1. A = {10,45,23,67,23,89}
+   B = {76,34,12,45,122}
+
+   i) Merge the array one after the other 
+      Output: {10,45,23,67,23,89,76,34,12,45,122}
+    
+   ii) Merge the array in zig-zag manner
+      Output: {10,76,45,34,23,12,67,45,23,122,89}
+    
+   iii) Take the sorted array that is mentioned below and merge it into another array where the resultant array
+        is also in sorted manner. Don't use any inbuilt methods to sort
+
+        Alpha = {2,24,36,48,50}
+        Beta = {11,23,25,27,39,41,53}
+        Result = {2,11,23,24,25,27,36,39,41,48,50,53}
+2. Express a given number as a sum of two prime numbers and display all the combinations possible
+
+    Input: 10
+    Output: 
+        10 = 3 + 7
+        10 = 5 + 5
+        10 = 7 + 3
