@@ -1,0 +1,66 @@
+1.Using new Keyword:
+    class Test{
+        String name = "Test Class";
+    }
+
+    class Demo{
+        public static void main(String[] args){
+            Test t = new Test();
+            System.out.println(t.name);
+        }
+    }
+2. Using new Instance (Involves Class.forName)
+   class Test{
+        String name = "Test Class";
+    }
+
+     class Demo{
+        public static void main(String[] args){
+            try{
+                //Upcasting
+                Class tempclass = Class.forName("Test");
+                //Downcasting
+                Test t = (Test)tempclass.newInstance();
+                System.out.println(t.name);
+
+            }
+            catch(ClassNotFoundException cnf){
+                cnf.printStackTrace();
+                System.out.println(cnf.getMessage());
+            }
+            catch(InstantiationException ie){
+                ie.printStackTrace();
+                System.out.println(ie.getMessage());
+            }
+            catch(IllegalAccessException ia){
+                ia.printStackTrace();
+                System.out.println(ia.getMessage());
+            }
+        }
+    }
+3. Using clone() method
+
+class Test implements Cloneable{
+        String name = "Test Class";
+
+        @Override
+        protected Object clone()throws CloneNotSupportedException{
+            return super.clone();
+        }
+
+    }
+class Demo{
+        public static void main(String[] args){
+            Test t = new Test();
+            System.out.println(t.name);
+            try{
+                Test t2 = (Test)t.clone();
+                System.out.println(t2.name);
+            }
+            catch(CloneNotSupportedException cns){
+                cns.printStackTrace();
+            }
+
+        }
+}
+
