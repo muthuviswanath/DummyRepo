@@ -1,0 +1,10 @@
+Find the common elements that are present in two different arrays.
+Insert one element at a specific position in the array
+Insert more than one element after a specific index value in an array
+For the following matrix find the following:
+
+        1. Sum of rows
+        2. Sum of Columns
+        3. Primary Diagonal sum and display the elements
+        4. Secondary Diagonal sum and display the elements
+        5. Display the prime, odd and even numbers in the matrix
